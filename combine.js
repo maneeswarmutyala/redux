@@ -49,6 +49,12 @@ const iceCreamReducer = (state = initialIceCreamstate, action) => {
         ...state,
         numOficeCreams: state.numOficeCreams + action.payload,
       };
+      //extra reducer tutorial ex
+    case CAKE_ORDERED:
+      return {
+        ...state,
+        numOficeCreams: state.numOficeCreams - 1,
+      };
     default:
       return state;
   }
